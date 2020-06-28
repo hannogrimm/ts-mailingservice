@@ -1,14 +1,7 @@
-import nodemailer from "nodemailer";
 import { MailingService } from "./MailingService";
+import { getMailTransporter } from "./utils/utils";
 
-export const testMailTransporter = nodemailer.createTransport({
-  port: 2525,
-  host: "localhost",
-  tls: {
-    secureProtocol: "TLSv1_method",
-    rejectUnauthorized: false
-  }
-});
+export const testMailTransporter = await getMailTransporter();
 
 export const testMailServiceConfig = {
   sender: {

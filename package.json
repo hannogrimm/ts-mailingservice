@@ -5,6 +5,7 @@
   "repository": "https://github.com/hannogrimm/ts-mailingservice",
   "author": "Hanno <hannogrimm@gmail.com>",
   "license": "Apache-2.0",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "start": "node dist/src"
