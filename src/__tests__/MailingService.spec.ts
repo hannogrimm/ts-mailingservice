@@ -2,8 +2,8 @@ import {
   testMailService as mailService,
   testMailTransporter as mailTransporter,
   testMailServiceConfig
-} from "./testingSetup";
-import { MailResponse } from "../types";
+} from "../testingSetup";
+import { MailResponse } from "../utils/types";
 
 let spy: jest.SpyInstance;
 

@@ -1,5 +1,5 @@
 import nodemailer from "nodemailer";
-import { MailingService } from "../MailingService";
+import { MailingService } from "./MailingService";
 
 export const testMailTransporter = nodemailer.createTransport({
   port: 2525,
