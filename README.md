@@ -28,4 +28,13 @@ For more alternative solutions, check out: https://nodemailer.com/smtp/
 
 ### Configuration
 
+```javascript
+config: {
+  sender: {
+    address: "no-reply@notetaking.example";
+    name: "Note-Taking App";
+  }
+}
+```
+
 The MailService requires a configuration of `transporter` (Nodemailer Transporter) and `config` parameters. The **_sender.address_** defines the email address under which mails are sent from while the _sender.name_ extends the name depicted in the mail inbox (e.g. Note-Taking App). If no _sender.name_ is provided, the default name will equal the **_sender.address_**.
