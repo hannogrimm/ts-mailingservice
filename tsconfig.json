@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "rootDir": ".",
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "lib": ["dom", "es6", "esnext"]
+  },
+  "include": ["main.ts", "src/**/*"],
+  "exclude": ["node_modules", "src/__tests__/*", "**/*.spec.ts"]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ts-mailingservice",
+  "version": "1.0.0",
+  "description": "Simple MailingService interface with Nodemailer",
+  "repository": "https://github.com/hannogrimm/ts-mailingservice",
+  "author": "Hanno <hannogrimm@gmail.com>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/src"
+  },
+  "dependencies": {
+    "nodemailer": "^6.4.10"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "@types/nodemailer": "^6.4.0",
+    "@types/nodemailer-direct-transport": "^1.0.31",
+    "jest": "^26.1.0",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.9.5"
+  }
+}
