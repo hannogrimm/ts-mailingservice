@@ -20,12 +20,12 @@ async function main() {
   });
   mail && console.log(`Mail sent to: ${mail.envelope.from}.`);
 
-  const templateMail = await Mailer.sendMail({
-    to: "hello@example.com",
-    ...MailingService.Templates.UserRegistered({
-      name: "Arthur"
+  const templateMail = await Mailer.sendMail(
+    MailingService.Templates.UserRegistered({
+      to: "hello@example.com",
+      name: "Bob"
     })
-  });
+  );
   templateMail.accepted && console.log("Template mail sent.");
 }
 

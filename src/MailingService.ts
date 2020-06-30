@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 import { MailOptions } from "nodemailer/lib/sendmail-transport";
-import templates from "./templates";
+import templates, { MailTemplate } from "./templates";
 import { MailResponse } from "./utils/types";
 
 interface MailingServiceProps {
@@ -16,7 +16,7 @@ interface MailingServiceProps {
 export class MailingService {
   protected transporter: MailingServiceProps["transporter"];
   protected config: MailingServiceProps["config"];
-  public static Templates = templates;
+  public static Templates: { [key: string]: MailTemplate } = templates || {};
 
   constructor(props: MailingServiceProps) {
     this.transporter = props.transporter;
